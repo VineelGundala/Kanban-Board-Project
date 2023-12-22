@@ -1,0 +1,184 @@
+
+
+nav{
+ width: 100%;
+ height: 100px;
+ background-color: rgb(26, 22, 22);
+ display: flex;
+ align-items: center;
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+body{
+  width: 100%;
+ height: 1000vh;
+
+}
+.tickets{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colors_bar{
+ background-color: rgb(92, 87, 94);
+width: 400px;
+height: 80px;
+margin-left: 4rem;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.red{
+ background-color: palevioletred;
+ width: 70px;
+ height: 40px;
+}
+.orange{
+ background-color: rgb(92, 182, 111);
+ width: 70px;
+ height: 40px;
+}
+.yellow{
+ background-color: rgb(230, 230, 83);
+ width: 70px;
+ height: 40px;
+}
+.white{
+ background-color: rgb(0, 0, 0);
+ width: 70px;
+ height: 40px;
+}
+.colorbox:hover{
+  background-color: rgb(163, 151, 151);
+  cursor: pointer;
+}
+
+.twoicons{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+padding: 1rem;
+ width: 150px;
+ height: 80px;
+ margin-left: 100px;
+font-size: 2rem;
+color: white;
+background-color: rgb(92, 87, 94);
+border-radius: 2rem;
+}
+.addicn{
+ padding-left: 10px;
+}
+.deleteicon{
+padding-left: 10px;
+}
+.addicn:hover{
+ font-size: 3rem;
+ cursor: pointer;
+ background-color: rgb(6, 163, 14);
+ border-radius: 2rem;
+}
+.deleteicon:hover{
+ font-size: 3rem;
+ background-color: rgb(245, 83, 83);
+ cursor: pointer;
+ border-radius: 2rem;
+}
+.ticket{
+ position: relative;
+ background-color: rgb(211, 195, 216);
+ width: 200px;
+ height: 250px;
+ margin: 2rem;
+ border-radius: 1rem;
+ overflow: hidden; /* Hide content that overflows */
+  word-wrap: break-word; /* Wrap long words onto the next line */
+  
+}
+.ticket-task{
+ outline: transparent;
+ width: 100%;
+ color: rgb(0, 0, 0);
+
+}
+.priorityclr{
+ width: 200px;
+ height: 1rem;
+ 
+ 
+}
+.idbox{
+ width: auto;
+ height: 2rem;
+ background-color: rgb(72, 135, 207);
+}
+.lockicon{
+position: absolute;
+bottom: 0;
+right: 0;
+margin: 10px;
+}
+.tickets{
+ display: flex;
+ justify-content: center;
+}
+.popupbox{
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ 
+ width: 500px;
+ height: 400px;
+ background-color: rgb(75, 67, 67);
+ display: none;
+ border: 1px solid black;
+}
+.popupbox .right div:hover{
+ border: 3px solid white;
+}
+.left{
+ background-color: azure;
+ width: 75%;
+ height: auto;
+}
+.right{
+ margin-left: 52px;
+width: 30%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+
+}
+.textareacont{
+ padding: 4px;
+ outline: none;
+  border: transparent; 
+ font-size: 1.5rem;
+ background-color: transparent;
+ width: 100%;
+ height: 100%;
+ resize: none;
+}
+.active{
+ border: 3px solid paleturquoise;
+}
+.lockicon:hover{
+ cursor: pointer;
+}
+.addicn{
+  color: white;
+}
+.deleteicon{
+  color: white;
+}
+.dltactive{
+  color: red;
+}
