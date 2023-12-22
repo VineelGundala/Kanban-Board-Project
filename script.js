@@ -4,12 +4,19 @@ let showpopup = false;
 let tickets = document.querySelector(".tickets");
 popup.style.display = "none";
 
+let mark = document.querySelector('.crossmark')
+
 let allprior = document.querySelectorAll(".prior");
 let colorselected = "pink";
 
 let xbtn = document.querySelector(".deleteicon");
 
 let ticketarr = [];
+
+mark.addEventListener('click',function(){
+  let container = document.querySelector(".legend")
+  container.style.display = 'none'
+})
 
 if (localStorage.getItem("tickets_store")) {
   ticketarr = JSON.parse(localStorage.getItem("tickets_store"));
@@ -53,7 +60,7 @@ popup.addEventListener("keydown", function (e) {
 
 function createticket(inputtext, colorselected, ticketid) {
   let id = ticketid || shortid();
-
+  colorselected = colorselected || 'red'
   let newele = document.createElement("div");
   newele.setAttribute("class", "ticket");
   newele.innerHTML = `<div class="priorityclr ${colorselected}"   > </div>

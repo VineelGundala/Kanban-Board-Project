@@ -36,13 +36,14 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 border-radius: 1rem;
-border:  0.1px solid white;
+border:  0.1px solid rgb(148, 140, 140);
 }
 
 .red{
  background-color: palevioletred;
  width: 70px;
  height: 40px;
+ 
 }
 .orange{
  background-color: rgb(92, 182, 111);
@@ -60,8 +61,9 @@ border:  0.1px solid white;
  height: 40px;
 }
 .colorbox:hover{
-  background-color: rgb(163, 151, 151);
+  background-color: rgb(199, 180, 180);
   cursor: pointer;
+ 
 }
 
 .twoicons{
@@ -78,20 +80,20 @@ padding: 0;
 color: white;
 background-color: rgb(92, 87, 94);
 border-radius: 1rem;
-border: 0.5px solid white;
+border: 0.5px solid rgb(148, 140, 140);
 }
 
 .addicn:hover{
   padding: 0;
  font-size: 3rem;
  cursor: pointer;
- background-color: rgb(6, 163, 14);
+ color: rgb(61, 179, 61);
 
 }
 .deleteicon:hover{
   padding: 0;
  font-size: 3rem;
- background-color: rgb(245, 83, 83);
+ color: rgb(233, 64, 64);
  cursor: pointer;
 
 }
